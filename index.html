@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Testing</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 25px;
+        text-align: center;
+        line-height: 40px;
+      }
+
+      .another {
+        margin: 20px 0 0 0;
+      }
+
+      header {
+        margin: -25px 5px 40px 0px;
+        background-color: steelblue;
+        border-radius: 0 0 5px 5px;
+        padding: 2px 2px 2px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Testing</h1>
+    </header>
+    <p id="Paragraph">Hey! What are you doing here? I was only testing JavaScript <br> and you burned my privacity! Get out of here, now! It's a laboratory! <br> Not a childish park.</p>
+    <p class="another">Uhh... you want games, ehh? So click this button and look the console</p>
+    <button onclick="add()"> Click me, Now! </button>
+    <p class="another">And if you want to restart, click this:</p>
+    <button onclick="restart()">restart</button>
+    <script>
+      let clicks = 0;
+      function add () {
+      clicks += 1;
+      console.log("clicks: " + clicks);
+      };
+      function restart () {
+      clicks = 0;
+      console.log("clicks: " + clicks);
+      console.log("Restarted");
+      console.log("And then, when you're satisfied, GET OUT OF HERE!")
+      }
+    </script>
+  </body>
+</html>
